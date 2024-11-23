@@ -1,0 +1,42 @@
+.collapse {
+  width: 70%;
+  margin: 35px auto;
+  padding: 0 20px; 
+
+  .collapse-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(250, 98, 98);
+
+    h3 {
+      color: white;
+    }
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  .collapse-content {
+    padding: 0 40px;
+    line-height: 28px;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 0.547);
+    overflow: hidden;
+    transition: max-height 0.2s ease;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .collapse { //pour etre à la meme largeur le la Banner
+  width: calc(100% - 30px); 
+  margin: 10px auto;
+  padding: 0 15px;
+}
+
+}
+

@@ -1,0 +1,149 @@
+.lodging-page {
+  
+  margin: 0 auto;
+
+  .cover-image {
+    object-fit: cover;
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+  }
+
+  .all-infos {
+   
+    justify-content: space-between;
+    display: flex;
+    margin-left: 8%;
+    margin-right: 8%;
+
+    @media screen and (max-width: 769px) {
+      margin: 0;
+      display: block;
+    }
+  }
+
+  .first-case {
+    margin: 20px 20px;
+
+    h2 {
+      color: rgb(255, 100, 100);
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+
+    p {
+      padding: 5px 0 20px;
+      font-weight: 600;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: nowrap; 
+      gap: 10px; 
+      margin-top: 10px;
+
+      @media (max-width: 769px) {
+        width: 100%;
+        justify-content: flex-start;
+      }
+    }
+
+    li {
+     
+      color: white;
+      background-color: rgb(255, 100, 100);
+      border-radius: 10px;
+      display: flex;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 3px 10px;
+      align-items: center;
+      height: 25px;
+
+      @media (max-width: 769px) {
+        font-size: 10px;
+        padding: 4px 30px; 
+        margin-right: 10px; 
+        width: calc(20% - 45px);
+        justify-content: center;
+        align-items: center;
+        
+      }
+    }
+  } 
+
+  .second-case {
+    margin: 20px 30px;
+    display: flex;
+    flex-direction: column-reverse; 
+    align-items: flex-end; 
+    gap: 20px; 
+
+    @media (max-width: 769px) {
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      margin-right: 20px;
+    }
+
+    .host {
+      display: flex;
+      align-items: center;
+
+      p {
+        color: rgb(255, 100, 100);
+        align-items: center;
+        display: flex;
+        padding-right: 10px;
+        font-size: 18px;
+
+        @media (max-width: 769px) {
+          display: flex;
+          align-items: center;
+        }
+        
+      }
+
+      .host-image {
+        border-radius: 50%;
+        width: 70px;
+        
+      }
+
+      .headinfos {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    .rate {
+      .rating {
+        display: flex;
+        align-items: center;
+
+        .star-inactive {
+          
+        
+          width: 25px;
+          height: auto;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  .col-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    margin-top: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+    @media screen and (max-width: 769px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
